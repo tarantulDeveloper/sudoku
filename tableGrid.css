@@ -1,0 +1,83 @@
+body {
+    background-image: linear-gradient(rgba(2, 5, 14, 0.802), rgba(2, 5, 17, 0.802)), url(images/background.jpg);
+    color: #fff;
+    margin-left: 50px;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 10px;
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    ;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: repeat(3, 200px);
+    width: 600px;
+    height: 600px;
+    justify-items: center;
+    align-items: center;
+    border: 2px solid black;
+    background: linear-gradient(to right, #09c40f, #0952db);
+}
+
+input {
+    text-align: center;
+    font-size: 25px;
+    border: 1px solid rgb(255, 0, 170);
+}
+
+input:hover {
+    background-color: #abe4eb;
+    cursor: default;
+}
+
+.grid-item {
+    display: inline-grid;
+    grid-template-columns: repeat(3, 60px);
+    grid-template-rows: repeat(3, 60px);
+    background: skyblue;
+}
+
+#gameOver,
+#won {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+#unknown {
+    height: 90px;
+}
+
+#Enter {
+    font-style: oblique;
+    font-weight: bold;
+}
+
+#green {
+    color: #12e33f;
+}
+
+#red {
+    color: #e01b3f;
+}
+
+#welcome {
+    margin: 1px;
+    font-family: 'Indie Flower', cursive;
+    font-size: 35px;
+    color: #ffff00;
+}
+
+button {
+    padding: 0.3rem 1rem;
+    font-size: 1rem;
+    background-color: #ffff00;
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+}
